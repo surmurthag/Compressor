@@ -14,7 +14,9 @@ npm install -g uglify-js
 
 <p>Ouvrez votre éditeur de texte et créez un nouveau fichier nommé <code>Compressor</code>.</p>
 
-<p>Ajoutez les commandes souhaitées dans le fichier <code>Compressor</code></p>
+<p>Ajoutez les commandes souhaitées dans le fichier <code>Compressor</code>.</p>
+
+
 <pre><code>#!/bin/bash
 
 # 1. Git Pull
@@ -28,9 +30,9 @@ cd public/assets/
 for file in *.css; do sudo uglifycss "$file" > "$file.tmp" &amp;&amp; mv "$file.tmp" "$file"; done
 cd ../..
 
-# 4. Compression JS dans le dossier public/build/js/
+# 4. Compression CSS dans le dossier public/build/js/
 cd public/build/js
-for file in *.js; do sudo uglifycss "$file" > "$file.tmp" &amp;&amp; mv "$file.tmp" "$file"; done
+for file in *.css; do sudo uglifycss "$file" > "$file.tmp" &amp;&amp; mv "$file.tmp" "$file"; done
 cd ../../..
 
 # 5. Clear Cache
