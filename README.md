@@ -1,3 +1,14 @@
+# Compressor
+
+## Installation
+
+Pour pouvoir utiliser ce script, vous devez installer les outils nécessaires. Exécutez les commandes suivantes dans votre terminal :
+
+```bash
+sudo npm install -g uglifycss
+sudo npm install -g html-minifier
+npm install -g uglify-js
+
 <h1>Compressor</h1>
 
 <p>Ouvrez votre éditeur de texte et créez un nouveau fichier nommé <code>Compressor</code>.</p>
