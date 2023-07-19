@@ -1,6 +1,6 @@
 # Compressor
 
-## Installation
+## Installation debian11
 
 Pour pouvoir utiliser ce script, vous devez installer les outils nécessaires. Exécutez les commandes suivantes dans votre terminal :
 sudo npm install -g uglifycss
