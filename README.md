@@ -14,7 +14,7 @@ npm install -g uglify-js
 
 <p>Ouvrez votre éditeur de texte et créez un nouveau fichier nommé <code>Compressor</code>.</p>
 
-<p>Ajoutez les commandes souhaitées dans le fichier <code>Compressor</code>
+<p>Ajoutez les commandes souhaitées dans le fichier <code>Compressor</code></p>
 <pre><code>#!/bin/bash
 
 # 1. Git Pull
