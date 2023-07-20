@@ -23,16 +23,16 @@ npm install -g uglify-js
 git pull
 
 # 2. Compression HTML
-find templates -type f -name "*.html.twig" -exec sh -c 'sudo html-minifier "$0" --output "$0" --overwrite' {} \;
+find templates -type f -name "*.html.twig" -exec sh -c 'html-minifier "$0" --output "$0" --overwrite' {} \;
 
 # 3. Compression CSS dans le dossier public/assets/
 cd public/assets/
-for file in *.css; do sudo uglifycss "$file" > "$file.tmp" &amp;&amp; mv "$file.tmp" "$file"; done
+for file in *.css; do uglifycss "$file" > "$file.tmp" &amp;&amp; mv "$file.tmp" "$file"; done
 cd ../..
 
 # 4. Compression JS dans le dossier public/build/js/
 cd public/build/js
-for file in *.js; do sudo uglifyjs "$file" > "$file.tmp" &amp;&amp; mv "$file.tmp" "$file"; done
+for file in *.js; do uglifyjs "$file" > "$file.tmp" &amp;&amp; mv "$file.tmp" "$file"; done
 cd ../../..
 
 # 5. Clear Cache
