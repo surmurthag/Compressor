@@ -11,9 +11,9 @@ cd public/assets/
 for file in *.css; do uglifycss "$file" > "$file.tmp" && mv "$file.tmp" "$file"; done
 cd ../..
 
-# 4. Compression CSS dans le dossier public/build/js/
+# 4. Compression JS dans le dossier public/build/js/
 cd public/build/js
-for file in *.js; do uglifycss "$file" > "$file.tmp" && mv "$file.tmp" "$file"; done
+for file in *.js; do uglifyjs "$file" > "$file.tmp" && mv "$file.tmp" "$file"; done
 cd ../../..
 
 # 5. Clear Cache
